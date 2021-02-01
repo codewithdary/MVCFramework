@@ -36,6 +36,10 @@
           // Unset 1 index
           unset($url[1]);
         }
+      }elseif(isset($url[0])){
+         $this->currentMethod = $url[0];
+          // Unset 0 index
+          unset($url[0]);
       }
 
       // Get params
